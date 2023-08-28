@@ -141,9 +141,9 @@ func finishCPUInfo(ctx context.Context, c *InfoStat) {
 		}
 	}
 
-	c.Mhz.current = fillMhz(ctx, "current", c)
-	c.Mhz.min = fillMhz(ctx, "min", c)
-	c.Mhz.max = fillMhz(ctx, "max", c)
+	c.Mhz.Current = fillMhz(ctx, "cur", c)
+	c.Mhz.Min = fillMhz(ctx, "min", c)
+	c.Mhz.Max = fillMhz(ctx, "max", c)
 
 }
 
@@ -153,7 +153,7 @@ func fillMhz(ctx context.Context, value string, c *InfoStat) float64 {
 	var line float64
 	var mhz float64 = 0
 
-	if value == "min" || value == "max" || value == "current" {
+	if value == "min" || value == "max" || value == "cur" {
 		lines, err = common.ReadLines(sysCPUPath(ctx, c.CPU, fmt.Sprintf("cpufreq/cpuinfo_%s_freq", value)))
 		// if we encounter errors below such as there are no cpuinfo_max_freq file,
 		// we just ignore. so let Mhz is 0.
@@ -290,7 +290,7 @@ func InfoWithContext(ctx context.Context) ([]InfoStat, error) {
 		case "cpu MHz", "clock", "cpu MHz dynamic":
 			// treat this as the fallback value, thus we ignore error
 			if t, err := strconv.ParseFloat(strings.Replace(value, "MHz", "", 1), 64); err == nil {
-				c.Mhz.current = t
+				c.Mhz.Current = t
 			}
 		case "cache size":
 			t, err := strconv.ParseInt(strings.Replace(value, " KB", "", 1), 10, 64)
