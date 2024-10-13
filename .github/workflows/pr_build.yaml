@@ -276,7 +276,7 @@ jobs:
       run: ./.github/workflows/scripts/build_artifacts.sh
     - continue-on-error: true
       name: Archive artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: binaries
         path: ./artifacts/
@@ -825,7 +825,7 @@ jobs:
         oidc-discovery-provider:latest-local | gzip > images.tar.gz
     - continue-on-error: true
       name: Archive images
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: images
         path: images.tar.gz
@@ -1706,7 +1706,7 @@ jobs:
         | gzip > scratch-images.tar.gz
     - continue-on-error: true
       name: Archive scratch images
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: scratch-images
         path: scratch-images.tar.gz
