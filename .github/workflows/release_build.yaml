@@ -1974,7 +1974,7 @@ jobs:
       run: zcat scratch-images.tar.gz | docker load
     - continue-on-error: true
       name: Log in to GCR
-      uses: docker/login-action@v2
+      uses: docker/login-action@v3
       with:
         password: ${{ secrets.GCR_JSON_KEY }}
         registry: gcr.io
@@ -1984,7 +1984,7 @@ jobs:
       run: ./.github/workflows/scripts/push-images.sh "${GITHUB_REF#refs/tags/v}"
     - continue-on-error: true
       name: Log in to GHCR
-      uses: docker/login-action@v2
+      uses: docker/login-action@v3
       with:
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: ghcr.io
