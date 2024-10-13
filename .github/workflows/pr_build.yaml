@@ -1107,13 +1107,13 @@ jobs:
           '
     - continue-on-error: true
       name: Download archived images
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: images
         path: .
     - continue-on-error: true
       name: Download archived scratch images
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: scratch-images
         path: .
