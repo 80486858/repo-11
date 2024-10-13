@@ -250,7 +250,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: Setup go
       uses: actions/setup-go@v3
@@ -529,7 +529,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: Setup go
       uses: actions/setup-go@v3
@@ -795,7 +795,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: Setup go
       uses: actions/setup-go@v3
@@ -1082,7 +1082,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - continue-on-error: true
@@ -1392,7 +1392,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: Setup go
       uses: actions/setup-go@v3
@@ -1675,7 +1675,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: Setup go
       uses: actions/setup-go@v3
@@ -1960,7 +1960,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: Setup go
       uses: actions/setup-go@v3
