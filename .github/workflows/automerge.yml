@@ -250,7 +250,7 @@ jobs:
         MERGE_LABELS: automerge
         MERGE_METHOD: squash
       name: automerge
-      uses: pascalgn/automerge-action@v0.14.3
+      uses: pascalgn/automerge-action@v0.16.4
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/Contrast-Security-OSS/stream.$(date
         +%s)
