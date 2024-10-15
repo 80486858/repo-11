@@ -250,7 +250,7 @@ jobs:
     - continue-on-error: true
       id: changes
       if: github.event_name != 'workflow_dispatch'
-      uses: dorny/paths-filter@v2
+      uses: dorny/paths-filter@v3
       with:
         filters: "actions:\n  - Dockerfile\n  - Dockerfile.updater\n  - 'common/**'\n\
           \  - 'updater/**'\n  - 'github_actions/**'\nbundler:\n  - Dockerfile\n \
