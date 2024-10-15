@@ -256,7 +256,7 @@ jobs:
         stable: false
     - continue-on-error: true
       name: golangci-lint
-      uses: golangci/golangci-lint-action@v3
+      uses: golangci/golangci-lint-action@v6
       with:
         skip-go-installation: true
     - name: after
