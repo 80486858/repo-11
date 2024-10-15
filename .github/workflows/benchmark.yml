@@ -258,7 +258,7 @@ jobs:
       run: go test -bench=. ./... | tee output.txt
     - continue-on-error: true
       name: Download previous benchmark data
-      uses: actions/cache@v2.1.7
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.os }}-benchmark
         path: ./cache
