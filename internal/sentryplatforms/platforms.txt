@@ -4,6 +4,8 @@ apple-ios
 apple-macos
 bun
 capacitor
+cloudflare-pages
+cloudflare-workers
 cordova
 dart
 deno
@@ -47,6 +49,7 @@ javascript-solid
 javascript-solidstart
 javascript-svelte
 javascript-sveltekit
+javascript-nuxt
 javascript-vue
 kotlin
 minidump
