@@ -257,7 +257,7 @@ jobs:
       with:
         fetch-depth: 0
     - continue-on-error: true
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
     - continue-on-error: true
       name: Install diff-shades and support dependencies
       run: 'python -m pip install pip --upgrade
