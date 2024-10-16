@@ -333,7 +333,7 @@ jobs:
     - continue-on-error: true
       if: env.IMAGE_TAG != ''
       name: Push the Docker image to GAR
-      uses: mozilla-it/deploy-actions/docker-push@v3.11.4
+      uses: mozilla-it/deploy-actions/docker-push@v3.12.0
       with:
         deployment_env: ${{ env.DEPLOYMENT_ENV }}
         image_repo_path: ${{ secrets.DOCKER_IMAGE_PATH }}
