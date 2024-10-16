@@ -249,12 +249,12 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
       with:
         fetch-depth: 0
     - continue-on-error: true
       name: Install Artifact Hub CLI
-      uses: action-stars/install-tool-from-github-release@58e2dd20166c0eb19ab9ac4d0966c930a647ee69
+      uses: action-stars/install-tool-from-github-release@ece2623611b240002e0dd73a0d685505733122f6
       with:
         check_command: ah version
         github_token: ${{ github.token }}
@@ -267,13 +267,13 @@ jobs:
       run: ah lint --kind helm || exit 1
     - continue-on-error: true
       name: Install Helm
-      uses: azure/setup-helm@5119fcb9089d432beecbf79bb2c7915207344b78
+      uses: azure/setup-helm@fe7b79cd5ee1e45176fcad797de68ecaf3ca4814
       with:
         token: ${{ github.token }}
         version: latest
     - continue-on-error: true
       name: Install Python
-      uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1
+      uses: actions/setup-python@19dfb7b659fa9e60c2f89c33335ab5f6f1792b6e
       with:
         python-version: 3.x
         token: ${{ github.token }}
@@ -291,7 +291,7 @@ jobs:
     - continue-on-error: true
       if: steps.changes.outputs.changed == 'true'
       name: Create Kind cluster
-      uses: helm/kind-action@dda0770415bac9fc20092cacbc54aa298604d140
+      uses: helm/kind-action@0025e74a8c7512023d06dc019c617aa3cf561fde
       with:
         wait: 120s
     - continue-on-error: true
