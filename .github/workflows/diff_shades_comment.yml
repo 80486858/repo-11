@@ -268,7 +268,7 @@ jobs:
       id: find-comment
       if: steps.metadata.outputs.needs-comment == 'true'
       name: Try to find pre-existing PR comment
-      uses: peter-evans/find-comment@d2dae40ed151c634e4189471272b57e76ec19ba8
+      uses: peter-evans/find-comment@3eae4d37986fb5a8592848f6a574fdf654e61f9e
       with:
         body-includes: diff-shades
         comment-author: github-actions[bot]
