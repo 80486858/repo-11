@@ -142,7 +142,7 @@ __metadata:
     swiper: ^8.3.2
     to-arraybuffer: ^1.0.1
     tty-browserify: ^0.0.1
-    unist-util-select: 3.0.4
+    unist-util-select: 5.1.0
     uuid: ^9.0.0
   peerDependencies:
     gatsby: ^4.22.0
@@ -7742,6 +7742,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/unist@npm:^3.0.0":
+  version: 3.0.3
+  resolution: "@types/unist@npm:3.0.3"
+  checksum: 96e6453da9e075aaef1dc22482463898198acdc1eeb99b465e65e34303e2ec1e3b1ed4469a9118275ec284dc98019f63c3f5d49422f0e4ac707e5ab90fb3b71a
+  languageName: node
+  linkType: hard
+
 "@types/vfile-message@npm:*":
   version: 1.0.1
   resolution: "@types/vfile-message@npm:1.0.1"
@@ -11834,6 +11841,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-selector-parser@npm:^3.0.0":
+  version: 3.0.5
+  resolution: "css-selector-parser@npm:3.0.5"
+  checksum: aefcc9841dcf02adee18f6225e03cd44a12aa6357694a19732d03b5d31a2d276b5c6a66a3c32b090438e8a7bfacdb6d0b2ae45b8b5d66eaf08efa941f768bd33
+  languageName: node
+  linkType: hard
+
 "css-to-react-native@npm:^3.0.0":
   version: 3.0.0
   resolution: "css-to-react-native@npm:3.0.0"
@@ -13256,6 +13270,15 @@ __metadata:
     tmp: ^0.0.33
     tslib: ^1.10.0
   checksum: 53f0281378be4b732019315b571a4d6e2133ad3963b8686cb19ac25fe37d186a745429248a0c4fcc558edba9b755fff23ed94e2a3e7e8ef7506893389941a372
+  languageName: node
+  linkType: hard
+
+"devlop@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "devlop@npm:1.1.0"
+  dependencies:
+    dequal: ^2.0.0
+  checksum: d2ff650bac0bb6ef08c48f3ba98640bb5fec5cce81e9957eb620408d1bab1204d382a45b785c6b3314dc867bb0684936b84c6867820da6db97cbb5d3c15dd185
   languageName: node
   linkType: hard
 
@@ -29744,16 +29767,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-util-select@npm:3.0.4, unist-util-select@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "unist-util-select@npm:3.0.4"
+"unist-util-select@npm:5.1.0":
+  version: 5.1.0
+  resolution: "unist-util-select@npm:5.1.0"
   dependencies:
-    css-selector-parser: ^1.0.0
-    not: ^0.1.0
+    "@types/unist": ^3.0.0
+    css-selector-parser: ^3.0.0
+    devlop: ^1.1.0
     nth-check: ^2.0.0
-    unist-util-is: ^4.0.0
-    zwitch: ^1.0.0
-  checksum: e6bdb4c79037e7d398a7682e3a2fb461e4b9ea8305e2228f54c47a3a27759e0bfc9f31eee763c31978b337d55f4a2216b974d3b7fcba058b1267ca1fc1e3ccfb
+    zwitch: ^2.0.0
+  checksum: 1e3abe4c53a642fc3f907b6462232e387b4b14c90ba5b8cb804592edf5020b48f8d9fd076b5beb406594641d385f847ab078c9f5dd3b8fe4aef32b8ce355158e
   languageName: node
   linkType: hard
 
@@ -29765,6 +29788,19 @@ __metadata:
     debug: ^2.2.0
     nth-check: ^1.0.1
   checksum: 19681874146213fc151d3faecfbb2999bbc63722b0e3cda06e769dd153f128d9bfc9350aa574878a64e322fb5de8179a87fb32ff71f0262838ef8361ac8c540c
+  languageName: node
+  linkType: hard
+
+"unist-util-select@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "unist-util-select@npm:3.0.4"
+  dependencies:
+    css-selector-parser: ^1.0.0
+    not: ^0.1.0
+    nth-check: ^2.0.0
+    unist-util-is: ^4.0.0
+    zwitch: ^1.0.0
+  checksum: e6bdb4c79037e7d398a7682e3a2fb461e4b9ea8305e2228f54c47a3a27759e0bfc9f31eee763c31978b337d55f4a2216b974d3b7fcba058b1267ca1fc1e3ccfb
   languageName: node
   linkType: hard
 
