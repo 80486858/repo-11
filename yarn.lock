@@ -132,7 +132,7 @@ __metadata:
     react-id-generator: ^3.0.2
     react-syntax-highlighter: ^15.5.0
     redoc: 2.0.0
-    redoc-cli: ^0.13.20
+    redoc-cli: ^0.13.21
     rehype-slug-custom-id: ^1.1.0
     request: ^2.88.2
     sharp: ^0.31.0
@@ -9783,6 +9783,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"boxen@npm:5.1.2, boxen@npm:^5.0.0, boxen@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "boxen@npm:5.1.2"
+  dependencies:
+    ansi-align: ^3.0.0
+    camelcase: ^6.2.0
+    chalk: ^4.1.0
+    cli-boxes: ^2.2.1
+    string-width: ^4.2.2
+    type-fest: ^0.20.2
+    widest-line: ^3.1.0
+    wrap-ansi: ^7.0.0
+  checksum: 82d03e42a72576ff235123f17b7c505372fe05c83f75f61e7d4fa4bcb393897ec95ce766fecb8f26b915f0f7a7227d66e5ec7cef43f5b2bd9d3aeed47ec55877
+  languageName: node
+  linkType: hard
+
 "boxen@npm:^4.2.0":
   version: 4.2.0
   resolution: "boxen@npm:4.2.0"
@@ -9796,22 +9812,6 @@ __metadata:
     type-fest: ^0.8.1
     widest-line: ^3.1.0
   checksum: ce2b565a2e44b33d11336155675cf4f7f0e13dbf7412928845aefd6a2cf65e0da2dbb0a2cb198b7620a2ae714416a2eb710926b780f15d19f6250a19633b29af
-  languageName: node
-  linkType: hard
-
-"boxen@npm:^5.0.0, boxen@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "boxen@npm:5.1.2"
-  dependencies:
-    ansi-align: ^3.0.0
-    camelcase: ^6.2.0
-    chalk: ^4.1.0
-    cli-boxes: ^2.2.1
-    string-width: ^4.2.2
-    type-fest: ^0.20.2
-    widest-line: ^3.1.0
-    wrap-ansi: ^7.0.0
-  checksum: 82d03e42a72576ff235123f17b7c505372fe05c83f75f61e7d4fa4bcb393897ec95ce766fecb8f26b915f0f7a7227d66e5ec7cef43f5b2bd9d3aeed47ec55877
   languageName: node
   linkType: hard
 
@@ -25876,25 +25876,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redoc-cli@npm:^0.13.20":
-  version: 0.13.20
-  resolution: "redoc-cli@npm:0.13.20"
+"redoc-cli@npm:^0.13.21":
+  version: 0.13.21
+  resolution: "redoc-cli@npm:0.13.21"
   dependencies:
+    boxen: 5.1.2
     chokidar: ^3.5.1
     handlebars: ^4.7.7
-    isarray: ^2.0.5
     mkdirp: ^1.0.4
     mobx: ^6.3.2
     node-libs-browser: ^2.2.1
     react: ^17.0.1
     react-dom: ^17.0.1
-    redoc: 2.0.0-rc.77
+    redoc: 2.0.0
     styled-components: ^5.3.0
-    update-notifier: ^5.0.1
     yargs: ^17.3.1
   bin:
     redoc-cli: index.js
-  checksum: 11779752c1276438aa16dc67cc4911490452fc474e92532278222e7d9655c05bee4e68a65d379cab5af8d55bd3552213f30eb707b74d8b5f3f4e354f030e835e
+  checksum: 0ef34187383f01bd0768c6f60b5d0fc4a8ab3e5d7807587ba5f33265d27813579dbaca0f429b6f20a0a65c44d3f1b5cc6708089babc9598a34b0faa92d13f5a6
   languageName: node
   linkType: hard
 
@@ -25931,42 +25930,6 @@ __metadata:
     react-dom: ^16.8.4 || ^17.0.0
     styled-components: ^4.1.1 || ^5.1.1
   checksum: 684d43dc62fb5f66ee765604b5745c6f742bf35b4cb603e546399ba76c987c7ef61313a51c99ababbb42a703d44bf84b78e3f7d1e5666d08b62930c52e35536f
-  languageName: node
-  linkType: hard
-
-"redoc@npm:2.0.0-rc.77":
-  version: 2.0.0-rc.77
-  resolution: "redoc@npm:2.0.0-rc.77"
-  dependencies:
-    "@redocly/openapi-core": ^1.0.0-beta.104
-    classnames: ^2.3.1
-    decko: ^1.2.0
-    dompurify: ^2.2.8
-    eventemitter3: ^4.0.7
-    json-pointer: ^0.6.2
-    lunr: ^2.3.9
-    mark.js: ^8.11.1
-    marked: ^4.0.15
-    mobx-react: ^7.2.0
-    openapi-sampler: ^1.3.0
-    path-browserify: ^1.0.1
-    perfect-scrollbar: ^1.5.5
-    polished: ^4.1.3
-    prismjs: ^1.27.0
-    prop-types: ^15.7.2
-    react-tabs: ^3.2.2
-    slugify: ~1.4.7
-    stickyfill: ^1.1.1
-    style-loader: ^3.3.1
-    swagger2openapi: ^7.0.6
-    url-template: ^2.0.8
-  peerDependencies:
-    core-js: ^3.1.4
-    mobx: ^6.0.4
-    react: ^16.8.4 || ^17.0.0
-    react-dom: ^16.8.4 || ^17.0.0
-    styled-components: ^4.1.1 || ^5.1.1
-  checksum: 960759320a1d81236712c4ded7dbdbec7f24892d1c4c188b0b800d8f416852557f7f91d7b123dd897f709bd1e45af52233ca122a596b28902b8a396c85e5a4ab
   languageName: node
   linkType: hard
 
@@ -29951,7 +29914,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-notifier@npm:^5.0.1, update-notifier@npm:^5.1.0":
+"update-notifier@npm:^5.1.0":
   version: 5.1.0
   resolution: "update-notifier@npm:5.1.0"
   dependencies:

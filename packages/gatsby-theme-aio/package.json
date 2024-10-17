@@ -155,7 +155,7 @@
     "react-id-generator": "^3.0.2",
     "react-syntax-highlighter": "^15.5.0",
     "redoc": "2.0.0",
-    "redoc-cli": "^0.13.20",
+    "redoc-cli": "^0.13.21",
     "rehype-slug-custom-id": "^1.1.0",
     "request": "^2.88.2",
     "sharp": "^0.31.0",
