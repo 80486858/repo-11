@@ -78,7 +78,7 @@ __metadata:
     "@storybook/addon-docs": ^6.5.12
     "@storybook/addon-essentials": ^6.5.12
     "@storybook/addon-interactions": ^6.5.12
-    "@storybook/addon-links": ^6.5.12
+    "@storybook/addon-links": ^8.3.5
     "@storybook/builder-webpack4": ^6.5.12
     "@storybook/manager-webpack4": ^6.5.12
     "@storybook/mdx2-csf": ^0.0.3
@@ -6126,31 +6126,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^6.5.12":
-  version: 6.5.12
-  resolution: "@storybook/addon-links@npm:6.5.12"
+"@storybook/addon-links@npm:^8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/addon-links@npm:8.3.5"
   dependencies:
-    "@storybook/addons": 6.5.12
-    "@storybook/client-logger": 6.5.12
-    "@storybook/core-events": 6.5.12
-    "@storybook/csf": 0.0.2--canary.4566f4d.1
-    "@storybook/router": 6.5.12
-    "@types/qs": ^6.9.5
-    core-js: ^3.8.2
-    global: ^4.4.0
-    prop-types: ^15.7.2
-    qs: ^6.10.0
-    regenerator-runtime: ^0.13.7
+    "@storybook/csf": ^0.1.11
+    "@storybook/global": ^5.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.3.5
   peerDependenciesMeta:
     react:
       optional: true
-    react-dom:
-      optional: true
-  checksum: 9e1394bc2fed9019537f3fee9f60abc4ea866d1688df72a435052dd07f25a8bac848d6acc2beef92af0cebc3715e9db9ae1bd95c87311a8b9fad7dee988bbd1d
+  checksum: 24ca01676b7983b8db0555b14cdcc9b9e3a1a5409f5d7ced5aa03880b2d0219fed3bd1b9db90a2e2449707d2d7361aa06882a938e483be075bfdc77956fee6da
   languageName: node
   linkType: hard
 
@@ -6692,6 +6681,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/csf@npm:^0.1.11":
+  version: 0.1.11
+  resolution: "@storybook/csf@npm:0.1.11"
+  dependencies:
+    type-fest: ^2.19.0
+  checksum: ba2a265f62ad82a2853b069f77e974efe31bed263a640ca1dd8e6d7e194022018a67ad4a2587ae928f33ae45aaf6ffedd5925ba3fcf3fe5b7996667a918e22eb
+  languageName: node
+  linkType: hard
+
 "@storybook/docs-tools@npm:6.5.12":
   version: 6.5.12
   resolution: "@storybook/docs-tools@npm:6.5.12"
@@ -6704,6 +6702,13 @@ __metadata:
     lodash: ^4.17.21
     regenerator-runtime: ^0.13.7
   checksum: 9433b0bc74e739f37d4be857e366d74e56566cdf27f72f462eb09a6e84713aadc8c768e075fbe7a062be104bb1536c14b8dea1e890917ca94b1580e71dbe60be
+  languageName: node
+  linkType: hard
+
+"@storybook/global@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@storybook/global@npm:5.0.0"
+  checksum: ede0ad35ec411fe31c61150dbd118fef344d1d0e72bf5d3502368e35cf68126f6b7ae4a0ab5e2ffe2f0baa3b4286f03ad069ba3e098e1725449ef08b7e154ba8
   languageName: node
   linkType: hard
 
@@ -29286,6 +29291,13 @@ __metadata:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^2.19.0":
+  version: 2.19.0
+  resolution: "type-fest@npm:2.19.0"
+  checksum: a4ef07ece297c9fba78fc1bd6d85dff4472fe043ede98bd4710d2615d15776902b595abf62bd78339ed6278f021235fb28a96361f8be86ed754f778973a0d278
   languageName: node
   linkType: hard
 
