@@ -72,7 +72,7 @@ __metadata:
     "@spectrum-css/tooltip": 3.1.18
     "@spectrum-css/typography": 4.0.20
     "@spectrum-css/underlay": 2.0.31
-    "@spectrum-css/vars": 8.0.0
+    "@spectrum-css/vars": 9.0.8
     "@spectrum-css/well": 3.0.22
     "@storybook/addon-actions": ^6.5.12
     "@storybook/addon-docs": ^6.5.12
@@ -5880,7 +5880,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@spectrum-css/vars@npm:8.0.0, @spectrum-css/vars@npm:^8.0.0":
+"@spectrum-css/vars@npm:9.0.8":
+  version: 9.0.8
+  resolution: "@spectrum-css/vars@npm:9.0.8"
+  checksum: cdc38cea193dcb59a9e2909760fa850cde17a864941df3fce5df56bd97ce5f4a5bc196b4b0808d792592918b9dc87c6f936a99e71d92f2e0b4a16298176f2209
+  languageName: node
+  linkType: hard
+
+"@spectrum-css/vars@npm:^8.0.0":
   version: 8.0.0
   resolution: "@spectrum-css/vars@npm:8.0.0"
   checksum: a0639066b21a2300bdc61f567e990960c626d53e2b8966de1174aa42790d29a13da878bf2ace398b875ced2afd622daf3b8bdaecd526e93451d3404f76091378
