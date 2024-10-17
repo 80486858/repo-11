@@ -28,7 +28,7 @@
     "tdesign-icons-vue": "^0.1.6",
     "tdesign-vue": "^1.9.0",
     "tvision-color": "~1.6.0",
-    "typescript": "^5.1.6",
+    "typescript": "^5.6.3",
     "vue": "~2.6.14",
     "vue-clipboard2": "^0.3.1",
     "vue-router": "^3.5.1",
