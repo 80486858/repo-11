@@ -254,7 +254,7 @@ jobs:
         java-version: '11'
     - continue-on-error: true
       name: Update Gradle Wrapper
-      uses: gradle-update/update-gradle-wrapper-action@v1
+      uses: gradle-update/update-gradle-wrapper-action@v2
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid2/tayoagboola/conductor.$(date
         +%s)
