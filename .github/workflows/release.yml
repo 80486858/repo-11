@@ -292,7 +292,7 @@ jobs:
     - continue-on-error: true
       if: github.event.inputs.test != 'true'
       name: Upload Debian package to release
-      uses: svenstaro/upload-release-action@2.6.1
+      uses: svenstaro/upload-release-action@2.9.0
       with:
         file: target/${{ matrix.target }}/debian/*.deb
         file_glob: true
