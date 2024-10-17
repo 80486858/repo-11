@@ -58,7 +58,7 @@ __metadata:
     "@spectrum-css/divider": 1.0.27
     "@spectrum-css/icon": 3.0.23
     "@spectrum-css/inlinealert": 4.0.13
-    "@spectrum-css/link": 3.1.23
+    "@spectrum-css/link": 5.1.3
     "@spectrum-css/menu": 4.0.4
     "@spectrum-css/modal": 3.0.23
     "@spectrum-css/picker": 1.2.12
@@ -5741,12 +5741,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@spectrum-css/link@npm:3.1.23":
-  version: 3.1.23
-  resolution: "@spectrum-css/link@npm:3.1.23"
+"@spectrum-css/link@npm:5.1.3":
+  version: 5.1.3
+  resolution: "@spectrum-css/link@npm:5.1.3"
   peerDependencies:
-    "@spectrum-css/vars": ^8.0.0
-  checksum: bda69f224ae29d587c5d758b9d0e56ea18204f9db4f53160e9ece2c750a6f25e254f0800c5269d01cf0ad8e1300e3aed96f6f272eb046f1cc5d495290eda5353
+    "@spectrum-css/tokens": ">=14"
+  checksum: 38e4ff8c3d50f7a774dd21540d44ef9cedb38ac63763a8b316af20688f2887f974e1f565b31b9193457fd2ee0b018dc62c8b8daab9032a5a934a12eda66c4c1b
   languageName: node
   linkType: hard
 
